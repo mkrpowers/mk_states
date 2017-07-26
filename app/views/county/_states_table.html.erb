@@ -22,6 +22,11 @@
       <td>
         <%= state.area %>
       </td>
+      <td>
+        <% if state.state_flag != '' %>
+          <%= state.area %>
+        <% end %>
+      </td>
     </tr>
     <% end %>
   </tbody>
