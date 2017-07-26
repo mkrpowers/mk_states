@@ -1,10 +1,11 @@
 <table>
   <thead>
     <tr>
-      <th width="20%" align="left">State</th>
+      <th width="25%" align="left">State</th>
       <th width="20%" align="left">Capital</th>
       <th width="20%" align="left">Population</th>
       <th width="20%" align="left">Area</th>
+      <th width="15%" align="left">Flag</th>
     </tr>
   </thead>
   <tbody>
@@ -24,7 +25,7 @@
       </td>
       <td>
         <% if state.state_flag != '' %>
-          <%= state.area %>
+          <%= image_tag "#{state.state_flag}", :style => "width: 65px; box-shadow: 2px 2px 4px #000;" %>
         <% end %>
       </td>
     </tr>
